@@ -4,7 +4,7 @@ function Dashboard() {
   return (
     <div>
       <Header></Header>
-      <div>Dashboard</div>
+      <div>Dashboard.</div>
 
     </div>
   )
