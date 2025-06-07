@@ -17,7 +17,7 @@ function NavigateButton({ setHeaderText }) {
 
   return (
     <>
-      <button onClick={() => { navigate("/"); setHeaderText("Dashboard"); }}>
+      <button onClick={() => { navigate("/"); setHeaderText("Dashboard."); }}>
         <img src={DashboardImg} alt="" /> Dashboard
       </button>
       <button onClick={() => { navigate("/events"); setHeaderText("Events"); }}>
