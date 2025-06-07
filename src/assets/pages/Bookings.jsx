@@ -79,7 +79,7 @@ if (res.ok) {
         <p>No bookings found.</p>
       )}
 
-      {/* Input fields for name and email */}
+      {/* Input fields for name and emaill */}
       <div style={{ marginTop: "20px" }}>
         <input
           type="text"
