@@ -12,7 +12,7 @@ const EventDetails = () => {
    // Get single event by id from event microservice
   const getEvent = async () => {
     try {
-      const res = await fetch(`https://localhost:7234/api/events/${id}`);
+      const res = await fetch(`https://microprojectevents.azurewebsites.net/api/events/${id}`);
       if (res.ok) {
         const data = await res.json();
         setEvent(data);

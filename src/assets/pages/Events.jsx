@@ -7,7 +7,7 @@ const Events = () => {
 
     // fetches events from database in events microseervice
     const getEvents = async () => {
-        const res = await fetch("https://localhost:7234/api/events")
+        const res = await fetch("https://microprojectevents.azurewebsites.net/api/events")
         if (res.ok){
             const data = await res.json()
             setEvents(data)
