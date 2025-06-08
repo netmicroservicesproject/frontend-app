@@ -7,7 +7,7 @@ const ConfirmedBookings = () => {
 
   const fetchConfirmedBookings = async () => {
     try {
-      const res = await fetch("https://localhost:7236/api/confirmation");
+      const res = await fetch("https://icroprojectconfirmation.azurewebsites.net/api/confirmation");
       if (res.ok) {
         const data = await res.json();
         setConfirmedBookings(data);

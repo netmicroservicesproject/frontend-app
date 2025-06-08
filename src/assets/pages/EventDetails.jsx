@@ -35,7 +35,7 @@ const addBooking = async () => {
   }
 
   try {
-    const res = await fetch("https://localhost:7235/api/booking", {
+    const res = await fetch("https://microprojectbookings.azurewebsites.net/api/booking", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
 body: JSON.stringify({ 

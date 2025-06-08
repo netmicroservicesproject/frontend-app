@@ -9,7 +9,7 @@ const Bookings = () => {
   // Fetch all bookings from the booking microservice
   const fetchBookings = async () => {
     try {
-      const res = await fetch("https://localhost:7235/api/booking");
+      const res = await fetch("https://microprojectbookings.azurewebsites.net/api/booking");
       if (res.ok) {
         const data = await res.json();
         setBookings(data);
@@ -33,7 +33,7 @@ const handleConfirm = async () => {
   const confirmationRequest = { name, email };
 
   try {
-    const res = await fetch("https://localhost:7236/api/confirmation", {
+    const res = await fetch("https://icroprojectconfirmation.azurewebsites.net/api/confirmation", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
